@@ -20,7 +20,7 @@ const TodoItems = ({ filter, todos, toggleTodo }) => {
 
   return (
     <ul>
-      {visibleTodos.sort((a, b) => (a.text < b.text ? -1 : 0)).map(todo =>
+      {visibleTodos.map(todo =>
         <Todo
           key={todo.id}
           {...todo}
